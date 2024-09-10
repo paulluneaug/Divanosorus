@@ -369,20 +369,24 @@ function isItPasswordProtected(foldername){
 	}
 }
 
-function doThePasswordMatch(userTry, foldername){
-	var userTryCleared = userTry.replace(/[^a-z0-9]/gi, '') ;
-	var passwordCleared = passwordCenter[foldername].replace(/[^a-z0-9]/gi, '') ;
+function doThePasswordMatch(userAttempt, foldername){
+	var passwordRegex = passwordCenter[foldername];
+	var clearedUserAttempt = userAttempt.toLowerCase();
 
 	if(isItPasswordProtected(foldername)
-		&& passwordCleared.toLowerCase() == userTryCleared.toLowerCase()){
+		&& passwordRegex.find(clearedUserAttempt))
+	{
 		return true;
-	}else{
+	}
+	else
+	{
 		return false;
 	}
 }
 
 function checkIfEnter(e, userTry, foldername){
-	if(e.keyCode === 13){
+	if(e.keyCode === 13)
+	{
 	    e.preventDefault(); // Ensure it is only this code that runs
 
 	    checkPassword(userTry, foldername) ;
