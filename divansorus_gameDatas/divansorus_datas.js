@@ -44,18 +44,18 @@ var udiskData =
 			[
 				{
 					"foldername": "RENCONTRE",
-					"files": ["poeme.png", "mer_souvenir.png", "maison_souvenir.png", "vacances_souvenir.png"]
+					"files": ["Poème.png", "Un après-midi sur l'eau.png", "Souvenir de sa maison.png", "Vacances avec elle.png"]
 				},
 				{
 					"foldername": "DECHIRURE", "password": /(?<!.)florence(?!.)/, "sequence": 0,
-					"files": ["devis_souvenir.png", "devis2_souvenir.png", "maison2_souvenir.png", "messages_souvenir.png"],
+					"files": ["Que se passe-t-il Marie.jpg", "Souvenir de sa maison.png", "maison2_souvenir.png", "messages_souvenir.png"],
 					"folders": [
-						{ "foldername": "FIN", "files": ["dummy.png"], "password": /0651141412/, "sequence": 2 }
+						{ "foldername": "BLOQUAGE", "password": /0651141412/, "sequence": 2 }
 					]
 				},
 				{
 					"foldername": "RAPPEL", "password": /(?<!.)(d[eéè]m[eéè]nag(ement|er|[eéè]e?))(?!.)/, "sequence": 1,
-					"files": ["numero_telephone.png", "annuaire_page1.png", "annuaire_page2.png"],
+					"files": ["Les anniversaires.png", "Pour la recontacter.png"],
 				}
 			],
 		"files": 
@@ -129,10 +129,9 @@ var missingContact = { "vid": "missing", "vod_folder": "", "username": "Nathalie
 /*Lou only send text message, they are stored here*/
 var tips = {};
 tips['Maman'] = [];
-tips['Maman'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom d'un guide ? Je crois que les contacts sont des guides justement, essayez peut-être de les appeler.";
-tips['Maman'][1] = "";
-tips['Maman'][2] = "";
-tips['Maman'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?";
+tips['Maman'][0] = "Ta première copine ? Je ne me rappelle plus vraiment. Françoise ? Ou Marie ? Vous étiez partis en vacances ensemble il me semble";
+tips['Maman'][1] = "Pourquoi elle était partie sans prévenir ? Je crois que son père était militaire";
+tips['Maman'][2] = "Son numéro ?  Elle rigolait pas tout le temps en disant que les derniers chiffres correspondaient à l'anniversaire' de Sam ?";
 
 
 /*text for the instruction / solution windows*/

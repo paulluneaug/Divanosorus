@@ -575,7 +575,7 @@ function changingSequence() {
 
 function win() {
 	winState = true;
-	openIt("newContact-window");
+	openEpilogue();
 	/*removing existing stuff*/
 	var nc = document.getElementById("normal-contact");
 	while (nc.firstChild) {
@@ -586,6 +586,8 @@ function win() {
 	while (hc.firstChild) {
 		hc.removeChild(hc.lastChild);
 	}
+	return;
+	openIt("newContact-window");
 }
 
 function closeNewContact(d) {
