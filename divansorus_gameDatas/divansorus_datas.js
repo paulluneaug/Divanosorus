@@ -43,25 +43,30 @@ var udiskData =
 		"folders":
 			[
 				{
-					"foldername": "RENCONTRE/JOIE",
-					"files": ["poeme", "mer_souvenir", "maison_souvenir", "vacances_souvenir"]
+					"foldername": "RENCONTRE",
+					"files": ["poeme.png", "mer_souvenir.png", "maison_souvenir.png", "vacances_souvenir.png"]
 				},
 				{
-					"foldername": "DECHIRURE/TRISTESSE", "password": /florence/, "sequence": 1,
-					"files": ["devis_souvenir", "devis2_souvenir", "maison2_souvenir", "messages_souvenir"]
+					"foldername": "DECHIRURE", "password": /(?<!.)florence(?!.)/, "sequence": 0,
+					"files": ["devis_souvenir.png", "devis2_souvenir.png", "maison2_souvenir.png", "messages_souvenir.png"],
+					"folders": [
+						{ "foldername": "FIN", "files": ["dummy.png"], "password": /(065114)?1992/, "sequence": 2 }
+					]
 				},
 				//{
 					//"foldername": "itineraire2018",
 					//"folders": [{ "foldername": "perso", "files": ["FXHT4438a.jpg", "Screenshot20180701_Wanderplaner(1).jpg"], "password": /nat[ae]/, "sequence": 0 }]
 				//},
 				{
-					"foldername": "RAPPEL", "password": /demenagement/, "sequence": 2,
-					"files": ["numero_telephone, annuaire_page1, annuaire_page2"],
-					"folders": [{ "foldername": "GPS", "files": ["idgps.png"], "password": /wandfluehorn/, "sequence": 3 }]
+					"foldername": "RAPPEL", "password": /(?<!.)(d[eéè]m[eéè]nag(ement|er|[eéè]e?))(?!.)/, "sequence": 1,
+					"files": ["numero_telephone.png", "annuaire_page1.png", "annuaire_page2.png"],
+					//"folders": [{ "foldername": "GPS", "files": ["idgps.png"], "password": /wandfluehorn/, "sequence": 3 }]
 				}
 			],
-		"files": [
-			"scan_memo.png"]
+		"files": 
+		[
+
+		]
 	}
 };
 

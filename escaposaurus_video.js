@@ -381,7 +381,7 @@ function doThePasswordMatch(userAttempt, foldername) {
 	var clearedUserAttempt = userAttempt.toLowerCase();
 
 	if (isItPasswordProtected(foldername)
-		&& passwordRegex.find(clearedUserAttempt)) {
+		&& passwordRegex.test(clearedUserAttempt)) {
 		return true;
 	}
 	else {
