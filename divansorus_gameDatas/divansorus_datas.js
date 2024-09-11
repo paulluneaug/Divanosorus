@@ -50,17 +50,12 @@ var udiskData =
 					"foldername": "DECHIRURE", "password": /(?<!.)florence(?!.)/, "sequence": 0,
 					"files": ["devis_souvenir.png", "devis2_souvenir.png", "maison2_souvenir.png", "messages_souvenir.png"],
 					"folders": [
-						{ "foldername": "FIN", "files": ["dummy.png"], "password": /(065114)?1992/, "sequence": 2 }
+						{ "foldername": "FIN", "files": ["dummy.png"], "password": /0651141412/, "sequence": 2 }
 					]
 				},
-				//{
-					//"foldername": "itineraire2018",
-					//"folders": [{ "foldername": "perso", "files": ["FXHT4438a.jpg", "Screenshot20180701_Wanderplaner(1).jpg"], "password": /nat[ae]/, "sequence": 0 }]
-				//},
 				{
 					"foldername": "RAPPEL", "password": /(?<!.)(d[eéè]m[eéè]nag(ement|er|[eéè]e?))(?!.)/, "sequence": 1,
 					"files": ["numero_telephone.png", "annuaire_page1.png", "annuaire_page2.png"],
-					//"folders": [{ "foldername": "GPS", "files": ["idgps.png"], "password": /wandfluehorn/, "sequence": 3 }]
 				}
 			],
 		"files": 
@@ -90,7 +85,7 @@ var callerAppName = "DISCUSSIONS";
 var titleData = {};
 titleData.introTitle = "INTRODUCTION";
 titleData.epilogueTitle = "EPILOGUE";
-titleData.callTitle = "APPEL EN COURS...";
+titleData.callTitle = "Discussion en cours...";
 
 /*change of caller app prompt for each sequence*/
 var promptDefault = "Rien à demander, ne pas les déranger.";
@@ -102,23 +97,22 @@ prompt[3] = "Envoyer la carte";
 prompt[4] = "Appeler Nathalie pour savoir où en sont les secours.";
 
 /*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
-var sequenceWin = 4;
+var sequenceWin = 3;
 
 /*before being able to call the contacts, the player has to open the main clue of the sequence as indicated in this array*/
 /*if you put in the string "noHint", player will be able to immediatly call the contact at the beginning of the sequence*/
 /*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 var seqMainHint = [];
-seqMainHint[0] = "scan_memo.png";
-seqMainHint[1] = "aucun"; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
-seqMainHint[2] = "aucun";
-seqMainHint[3] = "swisstopo-screen.png";
+seqMainHint[0] = "noHint";
+seqMainHint[1] = "noHint"; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
+seqMainHint[2] = "noHint";
 
 /*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 their img need to be placed in their video folder, username is their displayed name
 */
 var normalContacts = [];
-normalContacts[0] = { "vid": "Psychologue", "vod_folder": "", "username": "Psychologue", "canal": "video", "avatar": "psychologue_avatar.jpg" };
-normalContacts[1] = { "vid": "Maman", "vod_folder": "", "username": "Maman (téléphone)", "canal": "video", "avatar": "maman_avatar.jpg" };
+normalContacts[0] = { "vid": "Psychologue", "vod_folder": "", "username": "Psychologue", "canal": "video", "avatar": "psychologue_avatar.png" };
+normalContacts[1] = { "vid": "Maman", "vod_folder": "", "username": "Maman (téléphone)", "canal": "txt", "avatar": "maman_avatar.png" };
 
 /*second part of the list, contact that can help the player*/
 var helperContacts = [];
@@ -127,18 +121,18 @@ helperContacts[0] = { "vid": "Psychologue", "vod_folder": "", "username": "Psych
 
 
 /*ce qui apparait quand on trouve le dernier élément du disque dur*/
-finalStepAdded = "ID du GPS transmise aux secours.";
+finalStepAdded = "Bravo, plus de trauma";
 
 /*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
 var missingContact = { "vid": "missing", "vod_folder": "", "username": "Nathalie", "canal": "video", "avatar": "nata_avatar.jpg" };
 
 /*Lou only send text message, they are stored here*/
 var tips = {};
-tips['Albert'] = [];
-tips['Albert'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom d'un guide ? Je crois que les contacts sont des guides justement, essayez peut-être de les appeler.";
-tips['Albert'][1] = "";
-tips['Albert'][2] = "";
-tips['Albert'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?";
+tips['Maman'] = [];
+tips['Maman'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom d'un guide ? Je crois que les contacts sont des guides justement, essayez peut-être de les appeler.";
+tips['Maman'][1] = "";
+tips['Maman'][2] = "";
+tips['Maman'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?";
 
 
 /*text for the instruction / solution windows*/
@@ -151,4 +145,4 @@ instructionText.password = "Vous devez trouver et entrer le mot de passe d'un de
 var solutionText = {};
 solutionText.winState = "Si Sabine a été secourue, le jeu est fini bravo.";
 solutionText.lackMainHint = "Vous devez ouvrir le fichier <b>%s</b><br/>";
-solutionText.password = "Vous devez déverouiller le dossier <b>%s1</b><br/>avec le mot de passe : <b>%s2</b><br/>";
+solutionText.password = "Vous devez déverouiller les souvenirs <b>%s1</b><br/>avec le mot de passe : <b>%s2</b><br/>";

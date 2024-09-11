@@ -87,7 +87,6 @@ function startGame(overlay) {
 				var folders = data2.root.folders;
 				var files = data2.root.files;
 
-
 				loadGame(folders, files, overlay);
 			}
 		});
@@ -199,14 +198,16 @@ function arborescence(folders, files, parent, fullpath) {
 			//console.log("a folder" + obj.foldername) ;
 			var password = (obj.password == undefined) ? "" : obj.password;
 			var seqNumber = (obj.password == undefined) ? "" : obj.sequence;
-			cFolder(obj.foldername, parent, password, seqNumber);
+
+			var foldername = obj.foldername.replace(/\.[^/.]+$/, "");
+			cFolder(foldername, parent, password, seqNumber);
 
 			var fo = (obj.folders == undefined) ? null : obj.folders;
 			var fi = (obj.files == undefined) ? null : obj.files;
 
 
 			if (fi != null || fo != null) {
-				arborescence(fo, fi, obj.foldername, fullpath + obj.foldername + "/");
+				arborescence(fo, fi, foldername, fullpath + obj.foldername + "/");
 			}
 		}
 	}
@@ -261,6 +262,8 @@ function cFolder(name, parent, password, seqNumber) {
 
 /*file routine HTML*/
 function cFile(name, parent, fullPath) {
+	var fileName = name.replace(/\.[^/.]+$/, "");
+
 	var elem = document.createElement('li');
 	elem.id = name;
 	elem.name = name;
@@ -272,7 +275,7 @@ function cFile(name, parent, fullPath) {
 	elemA.href = udiskRoot + fullPath + name;
 	elemA.setAttribute("data-lightbox", "");
 	elemA.setAttribute("data-image-alt", "name");
-	elemA.innerHTML = name;
+	elemA.innerHTML = fileName;
 	elem.appendChild(elemA);
 
 	var p = document.getElementById(parent + "ul");

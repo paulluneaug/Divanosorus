@@ -10,6 +10,7 @@
 
 /*by default there is no margin or padding anywhere*/
 
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
 
@@ -23,7 +24,7 @@ a {
 }
 
 body {
-  font-family: 'Playwrite', serif;
+  font-family: 'SUSE', serif;
   background: url(img/divan_bg1.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +88,7 @@ video {
   font-weight: bold;
   padding: 5px;
   background: linear-gradient(45deg, #c87c8b, #D49BA6);
-  font-family: 'Playfair Display', serif;
+  font-family: 'SUSE', serif;
   border-radius: 10px;
 }
 
@@ -105,7 +106,7 @@ video {
 }
 
 .app-title-span {
-  font-family: 'Playfair Display', serif;
+  font-family: 'SUSE', serif;
   font-size: 30px;
 }
 
@@ -267,7 +268,7 @@ video {
   border: none;
   padding: 3px;
   margin: 3px;
-  font-family: 'Lora', serif;
+  font-family: 'SUSE', serif;
   font-size: 14px;
   font-weight: bold;
   border-radius: 5px;
@@ -319,7 +320,7 @@ video {
   border: none;
   margin-right: 5px;
   padding: 3px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'SUSE', serif;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
@@ -343,7 +344,7 @@ ul {
   margin: 0 0 0 20px;
   list-style: none;
   line-height: 2em;
-  font-family: 'Playwrite', serif;
+  font-family: 'SUSE', serif;
 }
 
 .arbo,
