@@ -43,24 +43,20 @@ var udiskData =
 		"folders":
 			[
 				{
-					"foldername": "gaming",
-					"files": ["20190509_316504.mp4"]
+					"foldername": "RENCONTRE/JOIE",
+					"files": ["poeme", "mer_souvenir", "maison_souvenir", "vacances_souvenir"]
 				},
 				{
-					"foldername": "vieillescartespostales",
-					"files": ["carte1.jpg", "carte2.jpg", "carte3.jpg", "carte4.jpg"]
+					"foldername": "DECHIRURE/TRISTESSE", "password": /florence/, "sequence": 1,
+					"files": ["devis_souvenir", "devis2_souvenir", "maison2_souvenir", "messages_souvenir"]
 				},
+				//{
+					//"foldername": "itineraire2018",
+					//"folders": [{ "foldername": "perso", "files": ["FXHT4438a.jpg", "Screenshot20180701_Wanderplaner(1).jpg"], "password": /nat[ae]/, "sequence": 0 }]
+				//},
 				{
-					"foldername": "dcim", "password": /forclaz/, "sequence": 1,
-					"files": ["20180807_103031.jpg", "20180807_114356.jpg", "20180807_123538.mp4"]
-				},
-				{
-					"foldername": "itineraire2018",
-					"folders": [{ "foldername": "perso", "files": ["FXHT4438a.jpg", "Screenshot20180701_Wanderplaner(1).jpg"], "password": /nat[ae]/, "sequence": 0 }]
-				},
-				{
-					"foldername": "itineraire2019", "password": /trient/, "sequence": 2,
-					"files": ["fortnitescreen.png", "swisstopo-screen.png"],
+					"foldername": "RAPPEL", "password": /demenagement/, "sequence": 2,
+					"files": ["numero_telephone, annuaire_page1, annuaire_page2"],
 					"folders": [{ "foldername": "GPS", "files": ["idgps.png"], "password": /wandfluehorn/, "sequence": 3 }]
 				}
 			],
@@ -70,20 +66,20 @@ var udiskData =
 };
 
 // @TODO : Replace
-var gameTitle = "Escaposaurus Scenario Exemple";
+var gameTitle = "Divanosaurus";
 // @TODO : Replace
-var gameDescriptionHome = "Ceci est une courte aventure d'exemple pour montrer ce que le framework Escaposaurus permet facilement de réaliser.<br/>Le code source est téléchargeable sur <a href='https://github.com/RedNaK/escaposaurus' target='_blank'>GitHub</a>";
+var gameDescriptionHome = "Thérapie dans le divan";
 // @TODO : Replace
-var gameMissionCall = "Voici la vidéo qu'Albert a envoyé à votre bureau d'informaticien spécialisé en récupération de données";
+var gameMissionCall = "Encore une visite chez le psy";
 // @TODO : Replace
-var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger la clé USB dans le serveur virtuel (JOUER) &laquo;&laquo;";
+var gameMissionAccept = "&raquo;&raquo; Fouiller dans vos souvenirs (JOUER) &laquo;&laquo;";
 
 var gameCredit = "Un jeu conçu et réalisé par : <br/>";
 var gameThanks = "Remerciements : <br/> Stéphanie Mader - Framework Escaposorus;)";
 
-var OSName = "Special InformaticienOS 3.11- diskloaded: Escaposaurus_Example";
-var explorerName = "USB DISK EXPLORER";
-var callerAppName = "CALL CONTACT";
+var OSName = "CERVEAU";
+var explorerName = "MEMOIRE";
+var callerAppName = "DISCUSSIONS";
 
 /*titles of video windows*/
 var titleData = {};
@@ -116,12 +112,12 @@ seqMainHint[3] = "swisstopo-screen.png";
 their img need to be placed in their video folder, username is their displayed name
 */
 var normalContacts = [];
-normalContacts[0] = { "vid": "Denise", "vod_folder": "", "username": "Denise (guide)", "canal": "video", "avatar": "denise_avatar.jpg" };
-normalContacts[1] = { "vid": "Nathalie", "vod_folder": "", "username": "Nathalie (guide)", "canal": "video", "avatar": "nata_avatar.jpg" };
+normalContacts[0] = { "vid": "Psychologue", "vod_folder": "", "username": "Psychologue", "canal": "video", "avatar": "psychologue_avatar.jpg" };
+normalContacts[1] = { "vid": "Maman", "vod_folder": "", "username": "Maman (téléphone)", "canal": "video", "avatar": "maman_avatar.jpg" };
 
 /*second part of the list, contact that can help the player*/
 var helperContacts = [];
-helperContacts[0] = { "vid": "Albert", "vod_folder": "", "username": "Albert (pour avoir un indice)", "canal": "txt", "avatar": "albert.png", "bigAvatar": "albertbig.png" };
+helperContacts[0] = { "vid": "Psychologue", "vod_folder": "", "username": "Psychologue (pour avoir un indice)", "canal": "txt", "avatar": "albert.png", "bigAvatar": "albertbig.png" };
 /*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
 
 
