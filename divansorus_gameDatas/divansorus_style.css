@@ -20,7 +20,7 @@
 }
 
 a {
-  color: #ffaccf;
+  color: #510f2a;
 }
 
 body {
@@ -41,8 +41,8 @@ video {
 }
 
 #main-container {
-  max-width: 1300px;
-  max-height: 1000px;
+  max-width: 100%,
+  max-height: 100%;
   margin: auto;
   height: 100%;
   border: 2px solid;
@@ -61,9 +61,6 @@ video {
   max-height: 1000px;
   margin: auto;
   height: 100%;
-  border: 2px solid;
-  border-image: linear-gradient(45deg, #E0A8B6, #F5C7CB) 1;
-  border-radius: 15px;
   text-align: center;
   position: relative;
 }
@@ -87,9 +84,8 @@ video {
   font-size: 30px;
   font-weight: bold;
   padding: 5px;
-  background: linear-gradient(45deg, #c87c8b, #D49BA6);
+  background: linear-gradient(45deg, #d86a82, #D49BA6);
   font-family: 'SUSE', serif;
-  border-radius: 10px;
 }
 
 #main-game-div {
@@ -264,7 +260,7 @@ video {
 #credit-window button,
 #overlay-index button {
   color: #fff;
-  background: linear-gradient(45deg, #E68095, #D49BA6);
+  background: linear-gradient(45deg, #e65572, #D49BA6);
   border: none;
   padding: 3px;
   margin: 3px;
@@ -306,7 +302,7 @@ video {
 #footer {
   height: 34px;
   width: 100%;
-  background: linear-gradient(45deg, #E68095, #D49BA6);
+  background: linear-gradient(45deg, #e65572, #D49BA6);
   position: absolute;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -349,7 +345,7 @@ ul {
 
 .arbo,
 .folder {
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
 }
 
