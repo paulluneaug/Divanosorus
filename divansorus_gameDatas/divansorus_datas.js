@@ -44,18 +44,22 @@ var udiskData =
 			[
 				{
 					"foldername": "RENCONTRE",
-					"files": ["Poème.png", "Un après-midi sur l'eau.png", "Souvenir de sa maison.png", "Vacances avec elle.png"]
+					"files": ["Poème.jpg", "Un après-midi sur l'eau.png", "Souvenir de sa maison.png", "Vacances avec elle.png"]
 				},
 				{
-					"foldername": "DECHIRURE", "password": /(?<!.)florence(?!.)/, "sequence": 0,
-					"files": ["Que se passe-t-il Marie.jpg", "Souvenir de sa maison.png", "maison2_souvenir.png", "messages_souvenir.png"],
+					"foldername": "DECHIRURE",
+					"password": /(?<!.)florence(?!.)/,
+					"sequence": 0,
+					"files": ["Que se passe-t-il Marie.jpg", "Souvenir de sa maison.png", "Tout le monde me lache.png", "Ca fait mal.png"],
 					"folders": [
 						{ "foldername": "BLOQUAGE", "password": /0651141412/, "sequence": 2 }
 					]
 				},
 				{
-					"foldername": "RAPPEL", "password": /(?<!.)(d[eéè]m[eéè]nag(ement|er|[eéè]e?))(?!.)/, "sequence": 1,
-					"files": ["Les anniversaires.png", "Pour la recontacter.png"],
+					"foldername": "RAPPEL",
+					"password": /(?<!.)((d[eéè]m[eéè]nag(ement|er|[eéè]e?))|(canada)|([eéè]tudes?)|(d[eéè]part))(?!.)/,
+					"sequence": 1,
+					"files": ["Adresse Dr Feur.jpg", "Les anniversaires.png", "Mot de passe.jpg", "Pour la recontacter.png"],
 				}
 			],
 		"files": 
@@ -124,7 +128,7 @@ helperContacts[0] = { "vid": "Psychologue", "vod_folder": "", "username": "Psych
 finalStepAdded = "Bravo, plus de trauma";
 
 /*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
-var missingContact = { "vid": "missing", "vod_folder": "", "username": "Nathalie", "canal": "video", "avatar": "nata_avatar.jpg" };
+var missingContact = { };
 
 /*Lou only send text message, they are stored here*/
 var tips = {};
@@ -132,6 +136,11 @@ tips['Maman'] = [];
 tips['Maman'][0] = "Ta première copine ? Je ne me rappelle plus vraiment. Françoise ? Ou Marie ? Vous étiez partis en vacances ensemble il me semble";
 tips['Maman'][1] = "Pourquoi elle était partie sans prévenir ? Je crois que son père était militaire";
 tips['Maman'][2] = "Son numéro ?  Elle rigolait pas tout le temps en disant que les derniers chiffres correspondaient à l'anniversaire' de Sam ?";
+
+tips['Psychologue'] = [];
+tips['Psychologue'][0] = "Vous aviez caché son nom dans un poème ?";
+tips['Psychologue'][1] = "";
+tips['Psychologue'][2] = "";
 
 
 /*text for the instruction / solution windows*/
