@@ -42,10 +42,8 @@ video {
 
 #main-container {
   max-width: 100%,
-  max-height: 100%;
   margin: auto;
   height: 100%;
-  border: 2px solid;
   border-image: linear-gradient(45deg, #D49BA6, #E9BBC9) 1;
   border-radius: 15px;
   text-align: center;
@@ -63,6 +61,7 @@ video {
   height: 100%;
   text-align: center;
   position: relative;
+  
 }
 
 #container-homeMission {
@@ -71,15 +70,17 @@ video {
   margin-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
+  
 }
 
 #div-homeMission {
   background: linear-gradient(380deg, #d86a82, #D49BA6);
   padding: 5px;
   border-radius: 10px;
+  
 }
 
-#os-name {
+#os-name {   /* CERVEAU */
   color: #ffffff;
   font-size: 30px;
   font-weight: bold;
@@ -92,22 +93,24 @@ video {
   width: 100%;
 }
 
-.app-title {
-  height: 50px;
+.app-title { /* "INTRODUCTION", "DISCUSSION" et "MEMOIRE" */
+  height: 35px;
   background: linear-gradient(45deg, #A65270, #B56576);
   border: 1px solid white;
   color: white;
   text-align: center;
   border-radius: 10px;
+  
+  background-color:red;
 }
 
 .app-title-span {
   font-family: 'SUSE', serif;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #callApp {
-  width: 500px;
+  width: 320px;
   height: auto;
   padding: 0;
   margin: 50px 100px 12px 50px;
@@ -163,8 +166,8 @@ video {
 }
 
 #folderApp {
-  width: 450px;
-  height: 650px;
+  width: 400px;
+  height: 350px;
   overflow: auto;
   padding: 0;
   margin: 50px 0 0 150px;
@@ -258,7 +261,7 @@ video {
 #nocall-window button,
 #solution-window button,
 #credit-window button,
-#overlay-index button {
+#overlay-index button { /* Boutons pour fermer les popup */
   color: #fff;
   background: linear-gradient(45deg, #e65572, #D49BA6);
   border: none;
@@ -337,7 +340,7 @@ video {
 }
 
 ul {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 15px;
   list-style: none;
   line-height: 2em;
   font-family: 'SUSE', serif;
@@ -345,7 +348,7 @@ ul {
 
 .arbo,
 .folder {
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
 }
 
