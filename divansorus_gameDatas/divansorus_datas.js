@@ -134,7 +134,7 @@ var missingContact = { };
 var tips = {};
 tips['Maman'] = [];
 tips['Maman'][0] = "Ta première copine ? Je ne me rappelle plus vraiment. Françoise ? Ou Marie ? Vous étiez partis en vacances ensemble il me semble";
-tips['Maman'][1] = "Elle avait été accepté dans son école au Canada, non ?";
+tips['Maman'][1] = "Florence ? Elle avait été accepté dans son école au Canada, non ?";
 tips['Maman'][2] = "Son numéro ?  Elle rigolait pas tout le temps en disant que les derniers chiffres correspondaient à l'anniversaire' de Sam ?";
 
 tips['Psychologue'] = [];
