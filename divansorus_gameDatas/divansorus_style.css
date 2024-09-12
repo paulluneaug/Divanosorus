@@ -67,14 +67,14 @@ video {
 
 #container-homeMission {
   width: 800px;
-  background-color: rgba(243, 190, 198, 0);
+  background-color: rgba(243, 190, 198, 0.275);
   margin-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
 }
 
 #div-homeMission {
-  background: linear-gradient(135deg, #F5D5D8, #FFFFFF);
+  background: linear-gradient(380deg, #d86a82, #D49BA6);
   padding: 5px;
   border-radius: 10px;
 }
