@@ -56,7 +56,7 @@ var udiskData =
 					"folders": [
 						{ 
 							"foldername": "BLOQUAGE",
-							"displayName": "Comment la retrouver ?", 
+							"displayName": "Comment la recontacter ?", 
 							"password": /0651141412/, 
 							"sequence": 2 
 						}
