@@ -50,7 +50,7 @@ var udiskData =
 					"foldername": "DECHIRURE",
 					"password": /(?<!.)florence(?!.)/,
 					"sequence": 0,
-					"files": ["Que se passe-t-il Marie.jpg", "Souvenir de sa maison.png", "Tout le monde me lache.png", "Ca fait mal.png"],
+					"files": ["Que se passe-t-il Marie.jpg", "Souvenir de sa maison.png", "Pourquoi Julie.jpg", "Reponds moi Aurore.jpg", "Tout le monde me lache.png", "Reviens Camille.jpg", "Ca fait mal.png"],
 					"folders": [
 						{ "foldername": "BLOQUAGE", "password": /0651141412/, "sequence": 2 }
 					]
