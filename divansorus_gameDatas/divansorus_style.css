@@ -45,10 +45,10 @@ video {
   margin: auto;
   height: 100%;
   border-image: linear-gradient(45deg, #D49BA6, #E9BBC9) 1;
-  border-radius: 15px;
+
   text-align: center;
   position: relative;
-  background: url(img/multicolor_alt.png);
+  background: url(img/Test_Background3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,6 +61,7 @@ video {
   height: 100%;
   text-align: center;
   position: relative;
+  
   
 }
 
@@ -81,11 +82,12 @@ video {
 }
 
 #os-name {   /* CERVEAU */
-  color: #ffffff;
-  font-size: 30px;
+  color: #ffffff00;
+
   font-weight: bold;
-  padding: 5px;
-  background: linear-gradient(45deg, #d86a82, #D49BA6);
+  /*background: linear-gradient(45deg, #d86a82, #D49BA6);
+   font-size: 30px;
+  */
   font-family: 'SUSE', serif;
 }
 
@@ -95,40 +97,41 @@ video {
 
 .app-title { /* "INTRODUCTION", "DISCUSSION" et "MEMOIRE" */
   height: 35px;
-  background: linear-gradient(45deg, #A65270, #B56576);
+  background: linear-gradient(45deg, #982369, #E03199);
   border: 1px solid white;
   color: white;
   text-align: center;
-  border-radius: 10px;
-  
-  background-color:red;
+  border-radius: 18px;
 }
 
 .app-title-span {
   font-family: 'SUSE', serif;
   font-size: 20px;
+  
 }
 
-#callApp {
-  width: 320px;
+#callApp { /* Fenêtre Discussions globale */
+  width: 450px;
   height: auto;
   padding: 0;
-  margin: 50px 100px 12px 50px;
-  background-color: #fff;
-  border: 2px solid;
-  border-image: linear-gradient(45deg, #c87c8b, #D49BA6) 1;
-  overflow: auto;
-  border-radius: 10px;
+  margin: 100px 100px 12px 50px;
+  background-color: #E4F0F8;
+  border: 1px solid;
+  border-color:white;
+  overflow: visible;
+  border-radius: 150px;
+  overflow:hidden;
+
 }
 
 #callApp-help,
-#callApp-prompt {
-  font-size: 18px;
-  padding: 10px;
+#callApp-prompt { /* "Rien à demander, ne pas les déranger" */
+  font-size: 15px;
   text-align: center;
-  background: linear-gradient(45deg, #E9BBC9, #fca2b0);
+  background: linear-gradient(45deg, #C9DDEA, #CCC6DD);
   color: black;
-  border-radius: 5px;
+  border-radius:100px;
+  
 }
 
 .contact-list {
@@ -138,12 +141,12 @@ video {
 
 .contact-div {
   font-size: 16px;
-  text-align: left;
+  text-align: center;
   border-radius: 5px;
 }
 
 .contact-div:hover {
-  background: #C45784;
+  background: #A8B0CB;
   cursor: pointer;
   color: #fff;
 }
@@ -158,23 +161,23 @@ video {
 .no-call {
   font-weight: normal;
   font-style: italic;
-  color: #aaaaaa;
 }
 
 .already-called {
-  font-weight: normal;
+  font-weight: 900;
+  color:red;
 }
 
-#folderApp {
-  width: 400px;
-  height: 350px;
+#folderApp { /* MEMOIRE */
+  width: 380px;
+  height: 430px;
   overflow: auto;
   padding: 0;
   margin: 50px 0 0 150px;
-  background-color: #fff;
-  border: 2px solid;
+  background-color: #E4F0F8;
   border-image: linear-gradient(45deg, #c87c8b, #f293d2) 1;
-  border-radius: 10px;
+  border-radius: 50px;
+  border: 1px solid #E4F0F8;
 }
 
 #folderApp-content {
@@ -305,14 +308,18 @@ video {
 #footer {
   height: 34px;
   width: 100%;
-  background: linear-gradient(45deg, #e65572, #D49BA6);
+  /*background: linear-gradient(45deg, #e65572, #D49BA6); */
   position: absolute;
   padding-top: 3px;
   padding-bottom: 3px;
   bottom: 0;
   text-align: center;
+  opacity:50%;
 }
 
+#footer:hover{
+  opacity:100%;
+}
 .footer-button {
   color: #000;
   background-color: #fff;
