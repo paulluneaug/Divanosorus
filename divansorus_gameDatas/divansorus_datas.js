@@ -116,11 +116,11 @@ their img need to be placed in their video folder, username is their displayed n
 */
 var normalContacts = [];
 normalContacts[0] = { "vid": "Psychologue", "vod_folder": "", "username": "Psychologue", "canal": "video", "avatar": "psychologue_avatar.png" };
-normalContacts[1] = { "vid": "Maman", "vod_folder": "", "username": "Maman (téléphone)", "canal": "txt", "avatar": "maman_avatar.png" };
+normalContacts[1] = { "vid": "Maman", "vod_folder": "", "username": "Maman (téléphone)", "canal": "txt", "avatar": "maman_avatar.png", "bigAvatar": "maman_avatar.png" };
 
 /*second part of the list, contact that can help the player*/
 var helperContacts = [];
-helperContacts[0] = { "vid": "Psychologue", "vod_folder": "", "username": "Psychologue (pour avoir un indice)", "canal": "txt", "avatar": "albert.png", "bigAvatar": "albertbig.png" };
+helperContacts[0] = { "vid": "Psychologue", "vod_folder": "", "username": "Psychologue (pour avoir un indice)", "canal": "txt", "avatar": "psychologue_avatar.png", "bigAvatar": "psychologue_avatar.png" };
 /*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
 
 
