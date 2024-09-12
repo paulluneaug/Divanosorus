@@ -199,15 +199,14 @@ function arborescence(folders, files, parent, fullpath) {
 			var password = (obj.password == undefined) ? "" : obj.password;
 			var seqNumber = (obj.password == undefined) ? "" : obj.sequence;
 
-			var foldername = obj.foldername.replace(/\.[^/.]+$/, "");
-			cFolder(foldername, parent, password, seqNumber);
+			cFolder(obj.foldername, obj.displayName, parent, password, seqNumber);
 
 			var fo = (obj.folders == undefined) ? null : obj.folders;
 			var fi = (obj.files == undefined) ? null : obj.files;
 
 
 			if (fi != null || fo != null) {
-				arborescence(fo, fi, foldername, fullpath + obj.foldername + "/");
+				arborescence(fo, fi, obj.foldername, fullpath + obj.foldername + "/");
 			}
 		}
 	}
@@ -220,7 +219,7 @@ function arborescence(folders, files, parent, fullpath) {
 }
 
 /*folder routine HTML*/
-function cFolder(name, parent, password, seqNumber) {
+function cFolder(name, displayName, parent, password, seqNumber) {
 	passwordCenter[name] = password;
 	if (password != null) {
 		sequenceFolder[seqNumber] = name;
@@ -248,7 +247,7 @@ function cFolder(name, parent, password, seqNumber) {
 
 	elemA.id = name + "sp";
 	elemA.name = name + "sp";
-	elemA.innerHTML = name;
+	elemA.innerHTML = displayName;
 	elem.appendChild(elemA);
 
 	var elem2 = document.createElement('ul');

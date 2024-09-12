@@ -44,19 +44,27 @@ var udiskData =
 			[
 				{
 					"foldername": "RENCONTRE",
+					"displayName": "Je me souviens...",
 					"files": ["Un après-midi sur l'eau.png", "Souvenir de sa maison.png", "Vacances avec elle.png", "Celle que j'aime.png"]
 				},
 				{
 					"foldername": "DECHIRURE",
+					"displayName": "Quel était son nom ?",
 					"password": /(?<!.)florence(?!.)/,
 					"sequence": 0,
 					"files": ["Que se passe-t-il Marie.jpg", "Souvenir de sa maison.png", "Pourquoi Julie.jpg", "Reponds moi Aurore.jpg", "Tout le monde me lache.png", "Reviens Camille.jpg", "Ca fait mal.png"],
 					"folders": [
-						{ "foldername": "BLOQUAGE", "password": /0651141412/, "sequence": 2 }
+						{ 
+							"foldername": "BLOQUAGE",
+							"displayName": "Comment la retrouver ?", 
+							"password": /0651141412/, 
+							"sequence": 2 
+						}
 					]
 				},
 				{
 					"foldername": "RAPPEL",
+					"displayName": "Pourquoi est-elle partie ?",
 					"password": /(?<!.)((d[eéè]m[eéè]nag(ement|er|[eéè]e?))|(canada)|([eéè]tudes?)|(d[eéè]part))(?!.)/,
 					"sequence": 1,
 					"files": ["Adresse Dr Feur.jpg", "Les anniversaires.png", "Mot de passe.jpg", "Pour la recontacter.png"],
@@ -128,7 +136,7 @@ helperContacts[0] = { "vid": "Psychologue", "vod_folder": "", "username": "Psych
 finalStepAdded = "Bravo, plus de trauma";
 
 /*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
-var missingContact = { };
+var missingContact = {};
 
 /*Lou only send text message, they are stored here*/
 var tips = {};
