@@ -44,7 +44,7 @@ var udiskData =
 			[
 				{
 					"foldername": "RENCONTRE",
-					"files": ["Poème.jpg", "Un après-midi sur l'eau.png", "Souvenir de sa maison.png", "Vacances avec elle.png"]
+					"files": ["Poème.png", "Un après-midi sur l'eau.png", "Souvenir de sa maison.png", "Vacances avec elle.png"]
 				},
 				{
 					"foldername": "DECHIRURE",
