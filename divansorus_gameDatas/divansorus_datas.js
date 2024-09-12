@@ -22,10 +22,10 @@ var videoRoot = gameDataRoot + "videos/";
 var contactVideoRoot = videoRoot + "contactVideo/";
 
 /*full path to intro / outro video*/
-var missionVideoPath = videoRoot + "introVideo/intro1.mp4";
-var introVideoPath = videoRoot + "introVideo/intro2.mp4";
+var missionVideoPath = videoRoot + "introVideo/0_Intro_SD.mp4";
+var introVideoPath = videoRoot + "introVideo/1_Reve_Escapausorus_SD.mp4";
 var missingVideoPath = videoRoot + "contactVideo/missing/final.mp4";
-var epilogueVideoPath = videoRoot + "epilogueVideo/epiloguecredit.mp4";
+var epilogueVideoPath = videoRoot + "epilogueVideo/4_Final_conclusion_SD.mp4";
 
 /*udisk JSON path*/
 var udiskRoot = gameDataRoot + "udisk/";
