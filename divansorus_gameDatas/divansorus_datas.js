@@ -134,12 +134,12 @@ var missingContact = { };
 var tips = {};
 tips['Maman'] = [];
 tips['Maman'][0] = "Ta première copine ? Je ne me rappelle plus vraiment. Françoise ? Ou Marie ? Vous étiez partis en vacances ensemble il me semble";
-tips['Maman'][1] = "Pourquoi elle était partie sans prévenir ? Je crois que son père était militaire";
+tips['Maman'][1] = "Elle avait été accepté dans son école au Canada, non ?";
 tips['Maman'][2] = "Son numéro ?  Elle rigolait pas tout le temps en disant que les derniers chiffres correspondaient à l'anniversaire' de Sam ?";
 
 tips['Psychologue'] = [];
 tips['Psychologue'][0] = "Vous aviez caché son nom dans un poème ?";
-tips['Psychologue'][1] = "";
+tips['Psychologue'][1] = "Pourquoi avait elle fait ses cartons ? Votre mère n’en a pas parlé ?";
 tips['Psychologue'][2] = "";
 
 
