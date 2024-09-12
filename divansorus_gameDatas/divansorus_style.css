@@ -98,8 +98,8 @@ video {
 .app-title { /* "INTRODUCTION", "DISCUSSION" et "MEMOIRE" */
   height: 35px;
   background: linear-gradient(45deg, #982369, #E03199);
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #E4F0F8;
+  color: #E4F0F8;
   text-align: center;
   border-radius: 18px;
 }
@@ -114,10 +114,10 @@ video {
   width: 450px;
   height: auto;
   padding: 0;
-  margin: 100px 100px 12px 50px;
+  margin: 150px 100px 12px 50px;
   background-color: #E4F0F8;
   border: 1px solid;
-  border-color:white;
+  border-color:#E4F0F8;
   overflow: visible;
   border-radius: 150px;
   overflow:hidden;
@@ -194,7 +194,7 @@ video {
   top: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid white;
+  border: 1px solid #E4F0F8;
   background: url(img/divan_bg1.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -208,7 +208,7 @@ video {
   z-index: 305;
   left: 20%;
   top: 10%;
-  border: 1px solid white;
+  border: 1px solid #E4F0F8;
   background: linear-gradient(135deg, #E79DA5, #F5D5D8);
   width: 1000px;
   text-align: center;
@@ -228,7 +228,7 @@ video {
   z-index: 300;
   left: 45%;
   top: 35%;
-  border: 1px solid white;
+  border: 1px solid #E4F0F8;
   background: linear-gradient(135deg, #F3BEC6, #F5C7CB);
   width: 200px;
   border-radius: 10px;
