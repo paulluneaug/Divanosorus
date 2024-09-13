@@ -148,7 +148,7 @@ tips['Maman'][2] = "Son numéro ?  Elle rigolait pas tout le temps en disant que
 tips['Psychologue'] = [];
 tips['Psychologue'][0] = "Vous aviez caché son nom dans un poème ?";
 tips['Psychologue'][1] = "Pourquoi avait elle fait ses cartons ? Votre mère n’en a pas parlé ?";
-tips['Psychologue'][2] = "";
+tips['Psychologue'][2] = "loulosimthtxxjjkuysj";
 
 
 /*text for the instruction / solution windows*/
