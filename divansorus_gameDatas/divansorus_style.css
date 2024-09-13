@@ -56,7 +56,7 @@ video {
 
 #main-container-index {
   max-width: 1300px;
-  max-height: 1000px;
+  max-height: 1000px
   margin: auto;
   height: 100%;
   text-align: center;
@@ -65,9 +65,19 @@ video {
   
 }
 
+#home-gameTitle{
+  color:white;
+  font-weight:bold;
+  font-size:5rem;
+}
+
+#home-gameDescription{
+  color:white;
+  font-weight:bold;
+}
+
 #container-homeMission {
   width: 800px;
-  background-color: rgba(243, 190, 198, 0.275);
   margin-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
