@@ -43,26 +43,26 @@ var udiskData =
 		"folders":
 			[
 				{
-					"foldername": "Ma première relation",
+					"foldername": "RENCONTRE",
 					"displayName": "Ma première relation",
 					"files": ["Un après-midi sur l'eau.png", "Souvenir de sa maison.png", "Vacances avec elle.png", "Celle que j'aime.png"]
 				},
 				{
-					"foldername": "Quel était son nom ?",
+					"foldername": "DECHIRURE",
 					"displayName": "Quel était son nom ?",
 					"password": /(?<!.)florence(?!.)/,
 					"sequence": 0,
 					"files": ["Que se passe-t-il Marie.jpg", "Souvenir de sa maison.png", "Pourquoi Julie.jpg", "Reponds moi Aurore.jpg", "Tout le monde me lache.png", "Reviens Camille.jpg", "Ca fait mal.png"],
 				},
 				{
-					"foldername": "Pourquoi est-elle partie ?",
+					"foldername": "RAPPEL",
 					"displayName": "Pourquoi est-elle partie ?",
 					"password": /(?<!.)((d[eéè]m[eéè]nag(ement|er|[eéè]e?))|(canada)|([eéè]tudes?)|(d[eéè]part))(?!.)/,
 					"sequence": 1,
 					"files": ["Adresse Dr Feur.jpg", "Les anniversaires.png", "Mot de passe.jpg", "Pour la recontacter.png"],
 					"folders": [
 						{ 
-							"foldername": "Comment la recontacter ?",
+							"foldername": "BLOQUAGE",
 							"displayName": "Comment la recontacter ?", 
 							"password": /0651141412/, 
 							"sequence": 2 

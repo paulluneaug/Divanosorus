@@ -240,7 +240,7 @@ function cFolder(name, displayName, parent, password, seqNumber) {
 	var elemA = document.createElement('a');
 	if (password != "") {
 		elemA.classList.add("protected-name");
-		elemA.setAttribute("onclick", "openPasswordPrompt('" + name + "')");
+		elemA.setAttribute("onclick", "openPasswordPrompt('" + name + "', '" + displayName + "')");
 	} else {
 		elemA.classList.add("folder-name");
 	}
@@ -410,12 +410,14 @@ function checkPassword(userTry, foldername) {
 	}
 }
 
-function openPasswordPrompt(foldername) {
+function openPasswordPrompt(foldername, displayName) {
 	/*if the not now prompt is open, we close it*/
 	var p = document.getElementById("notnowPrompt-window");
 	if (!p.classList.contains('hidden')) {
 		p.classList.add("hidden");
 	}
+
+	displayName = '"' + displayName + '"';
 
 	if (sequenceFolder[sequenceNumber] == foldername) {
 		document.getElementById("passwordInput").value = "";
@@ -425,7 +427,7 @@ function openPasswordPrompt(foldername) {
 		x.value = foldername;
 
 		var d = document.getElementById("folderD");
-		d.innerHTML = foldername;
+		d.innerHTML = displayName;
 
 		var p = document.getElementById("passPrompt-window");
 		p.classList.remove("hidden");
@@ -434,7 +436,7 @@ function openPasswordPrompt(foldername) {
 	} else {
 		if (folderState[foldername] == 1) {
 			var d = document.getElementById("folderN");
-			d.innerHTML = foldername;
+			d.innerHTML = displayName;
 
 			var p = document.getElementById("notnowPrompt-window");
 			p.classList.remove("hidden");
