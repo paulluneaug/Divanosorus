@@ -115,9 +115,9 @@ video {
   height: auto;
   padding: 0;
   margin: 150px 100px 12px 50px;
-  background-color: #E4F0F8;
+  background: linear-gradient(240deg, rgba(82,136,166,0.7904411764705882) 0%, rgb(136, 140, 163) 50%, rgba(115, 119, 140, 0.496) 100%);
   border: 1px solid;
-  border-color:#E4F0F8;
+  border-color:#8488a0;
   overflow: visible;
   border-radius: 150px;
   overflow:hidden;
@@ -128,8 +128,8 @@ video {
 #callApp-prompt { /* "Rien à demander, ne pas les déranger" */
   font-size: 15px;
   text-align: center;
-  background: linear-gradient(45deg, #C9DDEA, #CCC6DD);
-  color: black;
+  background: linear-gradient(90deg, rgba(57, 96, 117, 0.606) 0%, rgb(123, 129, 146) 50%, rgba(137, 147, 162, 0.547) 100%);
+  color: white;
   border-radius:100px;
   
 }
@@ -143,6 +143,7 @@ video {
   font-size: 16px;
   text-align: center;
   font-weight:bold;
+  color:white;
 }
 
 .contact-div:hover {
@@ -161,6 +162,7 @@ video {
 .no-call {
   font-weight: normal;
   font-style: italic;
+  color:white;
 }
 
 .already-called {
@@ -326,8 +328,8 @@ video {
   opacity:100%;
 }
 .footer-button {
-  color: #000;
-  background-color: #fff;
+  color: white;
+  background-color: #7F709C;
   border: none;
   margin-right: 5px;
   padding: 3px;
