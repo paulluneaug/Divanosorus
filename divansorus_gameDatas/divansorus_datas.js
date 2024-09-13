@@ -44,7 +44,7 @@ var udiskData =
 			[
 				{
 					"foldername": "RENCONTRE",
-					"displayName": "Je me souviens...",
+					"displayName": "Ma première relation",
 					"files": ["Un après-midi sur l'eau.png", "Souvenir de sa maison.png", "Vacances avec elle.png", "Celle que j'aime.png"]
 				},
 				{
@@ -87,7 +87,7 @@ var gameMissionCall = "Encore une visite chez le psy";
 var gameMissionAccept = "&raquo;&raquo; Fouiller dans vos souvenirs (JOUER) &laquo;&laquo;";
 
 var gameCredit = "Un jeu conçu et réalisé par : <br/>";
-var gameThanks = "Remerciements : <br/> Stéphanie Mader - Framework Escaposorus;)";
+var gameThanks = "Remerciements : <br/> Stéphanie Mader - Framework Escaposorus <br/> Pôle Magelis et CNAM ENJMIN;)";
 
 var OSName = "CERVEAU";
 var explorerName = "MEMOIRE";
