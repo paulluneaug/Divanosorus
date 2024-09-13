@@ -43,31 +43,31 @@ var udiskData =
 		"folders":
 			[
 				{
-					"foldername": "RENCONTRE",
+					"foldername": "Ma première relation",
 					"displayName": "Ma première relation",
 					"files": ["Un après-midi sur l'eau.png", "Souvenir de sa maison.png", "Vacances avec elle.png", "Celle que j'aime.png"]
 				},
 				{
-					"foldername": "DECHIRURE",
+					"foldername": "Quel était son nom ?",
 					"displayName": "Quel était son nom ?",
 					"password": /(?<!.)florence(?!.)/,
 					"sequence": 0,
 					"files": ["Que se passe-t-il Marie.jpg", "Souvenir de sa maison.png", "Pourquoi Julie.jpg", "Reponds moi Aurore.jpg", "Tout le monde me lache.png", "Reviens Camille.jpg", "Ca fait mal.png"],
+				},
+				{
+					"foldername": "Pourquoi est-elle partie ?",
+					"displayName": "Pourquoi est-elle partie ?",
+					"password": /(?<!.)((d[eéè]m[eéè]nag(ement|er|[eéè]e?))|(canada)|([eéè]tudes?)|(d[eéè]part))(?!.)/,
+					"sequence": 1,
+					"files": ["Adresse Dr Feur.jpg", "Les anniversaires.png", "Mot de passe.jpg", "Pour la recontacter.png"],
 					"folders": [
 						{ 
-							"foldername": "BLOQUAGE",
+							"foldername": "Comment la recontacter ?",
 							"displayName": "Comment la recontacter ?", 
 							"password": /0651141412/, 
 							"sequence": 2 
 						}
 					]
-				},
-				{
-					"foldername": "RAPPEL",
-					"displayName": "Pourquoi est-elle partie ?",
-					"password": /(?<!.)((d[eéè]m[eéè]nag(ement|er|[eéè]e?))|(canada)|([eéè]tudes?)|(d[eéè]part))(?!.)/,
-					"sequence": 1,
-					"files": ["Adresse Dr Feur.jpg", "Les anniversaires.png", "Mot de passe.jpg", "Pour la recontacter.png"],
 				}
 			],
 		"files": 
@@ -148,7 +148,7 @@ tips['Maman'][2] = "Son numéro ?  Elle rigolait pas tout le temps en disant que
 tips['Psychologue'] = [];
 tips['Psychologue'][0] = "Vous aviez caché son nom dans un poème ?";
 tips['Psychologue'][1] = "Pourquoi avait elle fait ses cartons ? Votre mère n’en a pas parlé ?";
-tips['Psychologue'][2] = "loulosimthtxxjjkuysj";
+tips['Psychologue'][2] = "En avez-vous parlé à un membre de votre famille ?";
 
 
 /*text for the instruction / solution windows*/
