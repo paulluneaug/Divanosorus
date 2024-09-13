@@ -97,8 +97,8 @@ video {
 
 .app-title { /* "INTRODUCTION", "DISCUSSION" et "MEMOIRE" */
   height: 35px;
-  background: linear-gradient(45deg, #982369, #E03199);
-  border: 1px solid #E4F0F8;
+  background: linear-gradient(45deg, #881f5e, #E03199, rgb(203, 37, 137));
+  border: 1px solid #e4f0f870;
   color: #E4F0F8;
   text-align: center;
   border-radius: 18px;
@@ -174,12 +174,15 @@ video {
   width: 380px;
   height: 430px;
   overflow: auto;
+  scrollbar-color: #d7e7f28b #cdb0d0a0;
+  scrollbar-width: thin;
   padding: 0;
   margin: 35px 0 0 80px;
-  background-color: #E4F0F8;
+  /*background-color: #E4F0F8; */
+  background: linear-gradient(90deg, #A61459 0%, #94256A 0%, #94256A 50%, rgba(181,101,118,0) 100%);
   border-image: linear-gradient(45deg, #c87c8b, #f293d2) 1;
   border-radius: 50px;
-  border: 1px solid #E4F0F8;
+  border: 1px solid #e0ebf354;
 }
 
 #folderApp-content {
@@ -353,12 +356,14 @@ ul {
   list-style: none;
   line-height: 2em;
   font-family: 'SUSE', serif;
+  
 }
 
 .arbo,
 .folder {
   font-size: 16px;
   position: relative;
+    color:white;
 }
 
 .arbo:before {
@@ -381,11 +386,15 @@ ul {
   display: inline-block;
   padding-left: 20px;
   height: 25px;
-  color: #A65270;
+  color:white;
+  font-weight:bold;
+  /*color: #A65270; TEMP*/
 }
 
 .folder-name:hover {
   text-decoration: none;
+  color:white;
+  font-weight:bold;
 }
 
 .protected-name {
@@ -394,10 +403,15 @@ ul {
   display: inline-block;
   padding-left: 20px;
   height: 25px;
+  color:white; /* TEMP */
+  font-weight:bolder;
+  font-size:2rem;
 }
 
 .protected-name:hover {
   cursor: pointer;
+  color:white;
+  font-weight:900;
 }
 
 .file-name {
@@ -406,10 +420,13 @@ ul {
   display: inline-block;
   padding-left: 20px;
   height: 25px;
+    color:white; /* TEMP */
 }
 
 .file-name:hover {
   cursor: pointer;
+  color:rgb(255, 255, 255);
+  font-weight:bold;
 }
 
 .arbo:after {
